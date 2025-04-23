@@ -15,7 +15,6 @@ public class AccountContactOpp {
             lstacc.add(acc);
         }
         insert lstacc;
-        System.debug('lstacc::>> ' +lstacc);
         Map<id,id> mapacntwithcon = new Map<id,id>();
         // Contact Insert 
         for(Account acc : lstacc){ 
@@ -27,7 +26,6 @@ public class AccountContactOpp {
             }
         }
         insert lstcon; 
-        System.debug('lstcon::>> ' +lstcon);
         // Opportunity 
         for(Account acc :lstacc){
             for(integer i=1; i<=z; i++){
@@ -41,7 +39,6 @@ public class AccountContactOpp {
             }
         }
         insert lstopp;
-        System.debug('lstopp::>> ' +lstopp);
         // contact role
         for(Contact con :lstcon){
             System.debug('con ' +con);
@@ -56,6 +53,5 @@ public class AccountContactOpp {
             }
         }
         insert listOppRole;
-        System.debug('listOppRole::>> ' +listOppRole);
     }
 }
