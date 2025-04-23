@@ -1,8 +1,8 @@
 public with sharing class Calculator123 {
     
         // Add two numbers
-        public static Integer add(Integer a, Integer b) {
-            return a + b;
+        public static Integer add(Integer a, Integer b, Integer c) {
+            return a + b + c;
         }
     
         // Subtract two numbers
