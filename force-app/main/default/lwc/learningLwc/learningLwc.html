@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="Learning Lwc" icon-name="utility:hierarchy">
+        <div class="slds-card__body slds-card__body-inner">
+            <p>
+                <lightning-formatted-text value={Integer}></lightning-formatted-text>
+            </p>
+            <p>
+                <lightning-input onchange={handleChange1} label="Input Text" value={text}></lightning-input>
+            </p>
+        </div>
+    </lightning-card>
+    <!--Show and Hide on button click-->
+    <lightning-card  title="Conditional rendering with button" >
+        <lightning-icon icon-name='utility:warning' alternative-text='warning' variant='error' size='large' title='warning'></lightning-icon>
+        <div class="slds-card__body slds-card__body-inner">
+            <p>
+                <template if:true={show}>
+                    Hi I am Nilesh
+                </template>
+                <template if:false={show}>
+                    patil
+                </template>
+            </p>
+            <p>
+                <lightning-button onclick={handleClick} variant="neutral" label="Switch"></lightning-button>
+            </p>
+        </div>
+    </lightning-card>
+    <div class="slds-m-around_medium">
+        <lightning-input
+            name='firstName'
+            label="First Name"
+            onchange={handleChange} >
+        </lightning-input>
+        <lightning-input
+            
+            name='lastName'
+            label="Last Name"
+            onchange={handleChange} >
+        </lightning-input>
+        <p class="slds-m-around_large">uppercase Full Name:{uppercaseFullName}</p>
+    </div>    
+
+</template>

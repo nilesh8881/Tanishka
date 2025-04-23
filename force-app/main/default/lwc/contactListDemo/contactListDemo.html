@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="Contact List" icon-name="standard:contact">
+        <lightning-layout vertical-align="Center">
+            <lightning-layout-item padding="around-small">
+               <lightning-input label= "Find Contact" value={searchkey} onchange={handleChange}>
+
+                </lightning-input>}
+           </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="Center">
+            <template for:each={contacts} for:item="contact">
+                <lightning-layout-item key={contact.key} item padding="around-small">
+                    <p>{contact.Name}</p>
+                    <p><lightning-formatted-email value={contact.Email}></lightning-formatted-email> </p>
+                    <p><lightning-formatted-phone value={contact.Phone}></lightning-formatted-phone> </p>
+                </lightning-layout-item>
+            </template>     
+          </lightning-layout>
+    </lightning-card>  
+    <lightning-card title="Account List" icon-name="standard:account">
+        <lightning-layout vertical-align="Center">
+            <lightning-layout-item padding="around-small">
+                <lightning-input label= "Find Contact" value={searchkeyAccount} onchange={handleChangeAccount}>
+
+                </lightning-input>}
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="Center">
+            <template for:each={accounts} for:item="account">
+                <lightning-layout-item key={account.Id} item padding="around-small">
+                    <p>{account.Name}</p>
+                    <p>{account.Industry}</p>
+                    
+                </lightning-layout-item>
+            </template>     
+          </lightning-layout>
+        <lightning-layout vertical-align="Center">
+            <lightning-layout-item padding="around-small">
+                    <lightning-button label="Find Accounts" variant="brand" onclick={findAccounts}>
+                    </lightning-button>
+            </lightning-layout-item>  
+        </lightning-layout>
+    </lightning-card>  
+</template>

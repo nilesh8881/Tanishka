@@ -1,0 +1,29 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
+	<div  style="padding: 1%;min-height: 400px;background-color: #2e3f5b;">
+            <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                <div class="students_name" id="students_name" style="color: #ffffff;">First Last</div>
+                <div class="hours" id="hours" style="color: #ffffff;">x Hours</div><br/><br/>
+                 
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:today" size="x-small" alternativeText="icon" />
+                        
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Schedule</strong><br/><br/>
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:people" size="x-small" alternativeText="icon" />
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Student Information</strong><br/><br/>
+                
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:event" size="x-small" alternativeText="icon" />
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">CSession</strong><br/><br/>
+                
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:call" size="x-small" alternativeText="icon" />
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Call Log</strong><br/><br/>
+                
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:task2" size="x-small" alternativeText="icon" />
+            </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Tasks</strong>
+                
+            </div>
+        </div>
+</aura:component>

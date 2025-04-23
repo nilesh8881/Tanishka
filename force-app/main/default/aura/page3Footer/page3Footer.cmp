@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
+	<div class="slds-col slds-size_12-of-12 slds-docked-form-footer">            
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:home" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Home</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action" title="no new notifications" aria-live="assertive" aria-atomic="true">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:groups" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Students</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:event" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Schedule</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action" title="no new notifications" aria-live="assertive" aria-atomic="true">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:task2" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Tasks</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="custom:custom112" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Chat</span>
+        </div> 
+</aura:component>

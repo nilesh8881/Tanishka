@@ -1,0 +1,14 @@
+<aura:component
+    implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes"
+    access="global">
+    <div style="padding: 1%;min-height: 500px;background-color: #2e3f5b;">
+        <div class="students_name" id="students_name">First Last</div>
+        <div class="hours" id="hours">x Hours</div>
+        <br/><br/>
+        <a href="#"><span class="material-icons"> schedule </span><span>Schedule</span></a><br/><br/>
+        <a href="#"><span class="material-icons"> person </span><span>Student Information</span></a><br/><br/>
+        <a href="#"><span class="material-icons"> event_note </span><span>Sessions</span></a><br/><br/>
+        <a href="#"><span class="material-icons"> call </span><span>Call Log</span></a><br/><br/>
+        <a href="#"><span class="material-icons"> task </span><span>Tasks</span></a>
+    </div>
+</aura:component>

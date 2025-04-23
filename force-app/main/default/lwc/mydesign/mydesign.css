@@ -1,0 +1,280 @@
+/* header  */
+ .ug-regular-header {
+  height: 48px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #2e3f5b;
+  display: flex;
+  align-items: center;
+}
+.header_logo {
+  margin-left: 16px;
+  margin-top:12px;
+  margin-bottom: 12px;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  caret-color: #ffffff;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  padding-left: 16px;
+}
+.input[type="search"]::-webkit-search-decoration,
+.input[type="search"]::-webkit-search-cancel-button,
+.input[type="search"]::-webkit-search-results-button,
+.input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+:focus {
+  outline: none;
+}
+::placeholder {
+  height: 19px;
+  width: 203px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.search-field {
+  height: 32px;
+  width: 280px;
+  padding-right: 100px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.16);
+  border-style: none;
+}
+* {
+  font-family: Open Sans;
+}
+.body {
+  margin: 0;
+}
+
+.slds-button{
+  color: #ffffff;
+}
+.main {
+  margin-left:220px;
+  padding: 24px;
+}
+.slds-large-nowrap{
+	padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+ /* Tasks */
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.tasks-title {
+  color: #0c1017;
+  font-family: "Titillium Web";
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.create-task {
+  height: 40px;
+  width: 110px;
+  border-radius: 3px;
+  background-color: #f1623a;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+  border-style: none;
+}
+.toggle {
+  height: 19px;
+  width: 111px;
+  color: #f9633d;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.task .task-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}  
+.task .task-separator {
+  justify-content: center;
+  align-items: center;
+}
+
+.task .task-header .left  {
+  padding-left: 8px;
+
+}
+.task .task-header .right  {
+  padding-right: 8px;
+}
+.task .task-header .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 24px;
+}
+
+.task .slds-var-m-left_large {
+  color: #99b1d1;
+  height: 24px;
+  width: 50px;
+}
+
+
+/*End Tasks */
+/* The sidebar menu */
+
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  margin-top: 99px;
+  margin-bottom: 99px;
+  width: 220px; /* Set the width of the sidebar */
+  position:fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left:36px;
+  background-color: #2e3f5b;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-left:0px;
+}
+
+.students_name {
+  height: 27px;
+  width: 125px;
+  color: #ffffff;
+  font-family: "Titillium Web";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.hours {
+  height: 17px;
+  width: 100px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-bottom: 19px;
+}
+/* The navigation menu links */
+.sidebar a {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  opacity: 0.6;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+.sidebar .slds-icon{
+  padding-right:4px;
+  color: #99b1d1;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:active  {
+  background-color: #475976;
+  opacity: 1;
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+  
+.sidebar a:active .slds-icon {
+  background-color: #FF0000;
+  opacity: 1;
+  color: #f9633d;
+  
+}
+.redColor{
+      
+  fill : #FF0000;
+
+}
+/* The sidebar menu */
+  /* REGULAR FOOTER START */
+.slds-col-footer {
+  width: 100vw;
+  height: 54px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 24px -20px #dde5ef, 2px 2px 40px -20px #dde5ef;
+}
+.slds-col-footer{
+  display: flex;
+  flex-direction:row;
+}
+  
+.slds-col-footer .slds-icon {
+  padding-right: 15px;
+  color: #99b1d1;
+  height: 24px;
+  width: 24px;
+}
+.slds-col-footer a:active {
+  color: #0c1017;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.slds-col-footer a:active .slds-icon {
+  background-color: #f9633d;
+  opacity: 1;
+  color: #f9633d;
+}
+.redColor{
+      
+  fill : #FF0000;
+
+}
+  /* REGULAR FOOTER END */

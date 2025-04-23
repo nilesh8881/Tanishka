@@ -1,0 +1,51 @@
+<template>
+    <div class="slds-progress slds-progress_vertical">
+        <ol class="slds-progress__list">
+            <li class="slds-progress__item ">
+                <span class="slds-progress__marker " title="Complete">
+                    <span class="slds-assistive-text">Complete</span>
+                </span>
+                <div class="slds-progress__item_content  nested slds-grid slds-grid_align-spread"
+                    style="line-gap-override: 70%;">Step 1
+                    <lightning-button label={clickedButtonLabel} title="Show" onclick={handleClick}
+                        icon-name={toggleIconName} class="slds-m-bottom_medium "
+                        style="margin-right:70%;margin-top: 20px;">
+                    </lightning-button>
+                </div>
+            </li>
+            <li class="slds-progress__item slds-progress_vertical ">
+                <template if:true={boolVisible}>
+                    <div class="slds-p-around-medium">
+                        <ul class="bar" style="margin-left:2pc;">
+                            <li>Child 1</li>
+                            <li>Child 2</li>
+                        </ul>
+                    </div>
+                </template>
+            </li>
+
+            <li class="slds-progress__item ">
+                <div class="slds-progress__marker">
+                    <span class="slds-assistive-text">Active</span>
+                </div>
+                <div class="slds-progress__item_content slds-grid slds-grid_align-spread">Step 2</div>
+
+            </li>
+            <li class="slds-progress__item">
+                <div class="slds-progress__marker"></div>
+                <div class="slds-progress__item_content slds-grid slds-grid_align-spread">Step 3</div>
+            </li>
+            <li class="slds-progress__item">
+                <div class="slds-progress__marker"></div>
+                <div class="slds-progress__item_content slds-grid slds-grid_align-spread">Step 4</div>
+            </li>
+            <li class="slds-progress__item">
+                <div class="slds-progress__marker"></div>
+                <div class="slds-progress__item_content slds-grid slds-grid_align-spread">Step 5</div>
+            </li>
+        </ol>
+        <div aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+            <span class="slds-assistive-text">Progress: 25%</span>
+        </div>
+    </div>
+</template>

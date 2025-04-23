@@ -1,0 +1,14 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="true">
+    
+    <script type="text/javascript" 
+    id="jsFastForms"
+    src="https://sfapi.formstack.io/FormEngine/Scripts/Main.js?d=fZstHIjQasUGDfQ48Ay3pYj3uuP_4ZT9VSAYVvIAuison5eSQihxM3osoa8ixFnm">
+     </script>
+    <style>
+        body {
+        background-colour : #323a41;
+        padding:1px;
+        padding-top:50px;
+        }
+    </style>
+</apex:page>

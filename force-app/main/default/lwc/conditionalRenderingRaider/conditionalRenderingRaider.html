@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="LWC Conditional Rendering" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <p lwc:if={property1}>Statement 1</p>
+            <p lwc:elseif={property2}>Statement 2</p>
+            <p lwc:else>Stetment 3</p>
+        </div>
+         <lightning-button class="slds-p-around_medium" variant="brand" label={buttonLabel} onclick={handleClick}></lightning-button>
+
+    </lightning-card>
+
+</template>

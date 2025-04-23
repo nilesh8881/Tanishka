@@ -1,0 +1,4 @@
+<aura:component implements="force:lightningQuickAction" >
+	<c:childLWC/>
+    <c:childLWC onclose="{!c.closeMethodInAuraController}"/>
+</aura:component>

@@ -1,0 +1,74 @@
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  margin-top: 99px;
+  margin-bottom: 99px;
+  width: 220px; /* Set the width of the sidebar */
+  position:fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left:36px;
+  background-color: #2e3f5b;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-left:0px;
+}
+
+.students_name {
+  height: 27px;
+  width: 125px;
+  color: #ffffff;
+  font-family: "Titillium Web";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.hours {
+  height: 17px;
+  width: 100px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-bottom: 19px;
+}
+/* The navigation menu links */
+.sidebar a {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  opacity: 0.6;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+.sidebar .slds-icon{
+  padding-right:4px;
+  color: #99b1d1;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:active  {
+  background-color: #475976;
+  opacity: 1;
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+  
+.sidebar a:active .slds-icon {
+  background-color: #FF0000;
+  opacity: 1;
+  color: #f9633d;
+  
+}
+.redColor{
+      
+  fill : #FF0000;
+
+}

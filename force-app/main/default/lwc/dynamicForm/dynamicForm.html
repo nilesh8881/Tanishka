@@ -1,0 +1,14 @@
+<template>
+    <lightning-combobox label="Select Form Type " 
+        value={selectedFormType} 
+        placeholder="Select Progress"
+        options={formTypeOptions}
+        onchange={handleFormTypeChange} >
+    </lightning-combobox>
+    <template if:true={showNameField}>
+        <lightning-input label="Name" ></lightning-input>
+    </template>
+    <template if:true={showEmailField}>
+        <lightning-input label="Email"></lightning-input>
+    </template>
+</template>

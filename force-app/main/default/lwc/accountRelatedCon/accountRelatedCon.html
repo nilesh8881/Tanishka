@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Choose Account Name" icon-name="standard:account">
+        <!-- Table -->
+        <table>
+            <tr>
+                <td>
+                    <div class="slds-m-around_medium">
+                        <select class="slds-select" onchange={contactFetch}>
+                            <option>Select Account</option>
+                            <template for:each={acc} for:item="item">
+                                <option key={item.Id} class="uiInputSelectOption" value={item.Id}>{item.Name}</option>
+                            </template>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+       
+       <template if:true={iscontact}>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered" border="1" cellspacing="0" cellpadding="0" bordercolor="#ccc" style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead> 
+             <template for:each={con} for:item='conItem'>
+                 <tr key={conItem.Id}>
+                     <td>{conItem.FirstName}</td>
+                     <td>{conItem.LastName}</td>
+                     <td>{conItem.Email}</td>
+                     <td>{conItem.Phone}</td>
+                 </tr>
+             </template>
+         </table>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2)
+      format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+      U+FEFF, U+FFFD;
+  }
+  .main {
+    size: 100%;
+    padding: 32px;
+    margin-top: 32px;
+    margin-left: 220px;
+    margin-bottom: 56px;
+  }
+  
+  .top {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    display: flex;
+    
+  }
+  .bottom {
+    width: 100%;
+    /*overflow: hidden;*/
+    display: flex;
+  }
+  .days {
+    box-sizing: border-box;
+    height: 33px;
+    width: 10%;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding-right: 24px;
+    color: #0c1017;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .startTime {
+    height: 48px;
+    width: 20%;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    margin-left: 10%;
+    white-space: nowrap;
+  }
+  .startTimeMargin {
+    margin-left: 10%;
+    width: 20%;
+    margin-top: -12px;
+  }
+  .marginbtn{
+    margin-left: 10%;
+  }
+  .slds-input .slds-combobox__input{
+    height: 50px;
+    margin-top: -10px;
+  }
+  .sldsinput{
+   width: 25%;
+  }
+  .monthYear {
+    box-sizing: border-box;
+    height: 30px;
+    width: 20%;
+    border: 1px solid #99b1d1;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    white-space: nowrap;
+    margin-top:20px;
+  }
+  .dropDown {
+    box-sizing: border-box;
+    height: 48px;
+    width: 25%;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding-right: 24px;
+    margin-right: 14px;
+  }
+  .dropDownText {
+    font-family: "Source Sans Pro";
+    color: #0c1017;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-left: 6px;
+    white-space: nowrap;
+  }
+  .greenColor{
+    background-color: #4bca81;
+  }
+  
+  .save {
+    height: 48px;
+    width: 88px;
+    border-radius: 3px;
+    background-color: #f1623a;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    margin-left: 0px;
+    float: right;
+    margin-right: 16px;
+  }
+  .cancel {
+    height: 48px;
+    width: 88px;
+    border-radius: 3px;
+    background-color: #dde5ef;
+    color: #0c1017;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    margin-left: 0px;
+    float: right;
+    margin-right: 16px;
+  }
+  hr {
+    width: 99%;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  
+    background-color: #dde5ef;
+  }

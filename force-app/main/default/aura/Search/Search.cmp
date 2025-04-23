@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    
+   <!-- <lightning:layout multipleRows="true">
+        <lightning:layoutItem padding="around-small" size="6">
+            <lightning:input name="searchKey" placeholder="Enter Search Key" value="{!v.searchKey}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-small" size="3">
+            <lightning:button variant="brand" label="Search" title="Search" onclick="{!c.search}" class="SearchButton"/>
+        </lightning:layoutItem>
+    </lightning:layout>
+    
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <lightning:button name="notice" label="Show Notice" onclick="{!c.handleShowNotice}"/>
+    <lightning:icon iconName="custom:custom53" title="custom53" />
+    
+    <lightning:card  title="Student">
+        <aura:set attribute="actions">
+             <lightning:buttonIcon iconName="utility:down" variant="border-filled" alternativeText="Show More"/>
+        </aura:set>
+        
+    </lightning:card>-->
+    
+    
+    
+    
+        
+</aura:component>

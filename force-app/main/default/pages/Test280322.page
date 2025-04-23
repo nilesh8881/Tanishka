@@ -1,0 +1,262 @@
+<apex:page >
+    <html>
+        <style>
+            
+            tr{border-bottom: 1px solid #ddd;}
+            td{padding: 1%;}
+            h1{padding: 2%;}
+        </style>
+        <body>
+            <h1>Tomachei Matzah Template</h1>
+            <table  title="Tomachei Matzah Template" style="width:100%" >
+                <tr>
+                    <td  style="width:50%; text-align: right;">Matzah-Hand Regular</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Matzah__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Matzah-Hand WW</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Matzah_Hand_WW__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Lakewood Matzah- Hand Regular</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Lakewood__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Lakewood Matzah- Hand WW</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Lakewood_Matzah_Hand_WW__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Machine Matzah - 1 lb Box</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Machine_Matzah__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Matzah – Oat</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Oat_Matzah__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Matzah – Spelt</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Spelt_Matzah__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Order Notes:</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Description__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;"></td>
+                    <td style="width:50%; text-align: left;">!Contact.Family_Code__c</td>
+                </tr>
+            </table>
+            
+            <br/>
+            <h1>Tomachei Order Template</h1>
+            <table title="Tomachei Order Template" style="width:100%" >
+                <tr>
+                    <td  style="width:50%; text-align: right;">Potatoes</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Potatoes__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;"> Yellow Potatoes</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Yellow_Potatoes__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Chicken Legs</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Chicken_Legs__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Chicken Quarters</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Chicken_Quarters__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Chicken Cutlets</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Chicken_Cutlets__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Chicken Bones</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Chicken_Bones__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Roast Package</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Roast_Package__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Roast Package – BeisYosef</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Roast_Package_Beis_Yosef__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Meat Package</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Meat_Package__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Meat Package – BeisYosef</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Meat_Package_Beis_Yosef__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Gefilte Fish</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Gefilte_Fish__c</td>
+                </tr>
+                <tr>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Pickup_Delivery_Date__c</td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td  style="width:50%; text-align: right;">Salmon</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Salmon__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Wine/Case</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Wine_Quantity__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Cream Malaga</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Cream_Malaga__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Cream Red</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Cream_Red__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Matuk Kal</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Matuk_Kal__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Matuk Rouge Soft</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Matuk_Rouge_Soft__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Concord Kal</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Concord_Kal__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Grape Juice – NonMevushal</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Grape_Juice_Non_Mevushal__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Grape Juice -Mevushal</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Grape_Juice_Mevushal__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Grape Juice - Light</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Light_Grape_Juice__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Apple Juice</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Apple_Juice__c</td>
+                </tr>
+                <tr>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Pickup_Delivery_Date__c</td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td  style="width:50%; text-align: right;">Seltzer</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Seltzer__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Prepack</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Prepack__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Sweet Potatoes</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Sweet_Potatoes__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Apples</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Apples__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Oranges</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Oranges__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Grapefruits</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Grapefruits__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Onions</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Onions__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Carrots</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Carrots__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Eggs Small</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Eggs_15_dozen__</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Eggs Large</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Eggs_30_dozen__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Snack Bags</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Snack_Bags__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Baby Fingers</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Baby_Fingers__c</td>
+                </tr>
+                <tr>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Pickup_Delivery_Date__c</td>
+                </tr>
+                
+                
+                <tr>
+                    <td  style="width:50%; text-align: right;">Leben</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Leben__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Yogurt</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Yogurt__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Dairy Box</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Dairy_Box__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">9 x 13 Pans</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.X9x13_Pans__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">9” Round Pans</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.X9_round_pans__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">9” Plates</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.X9_Round_Plates__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">6” Plates</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.X6_plates__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">7 oz Cups</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.X7oz_Cups__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Bowls</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Bowls__c</td>
+                </tr>
+                <tr>
+                    <td  style="width:50%; text-align: right;">Foil Roll</td>
+                    <td style="width:50%; text-align: left;">!Order_Tomchei__c.Foil_Roll__c</td>
+                </tr>
+                <tr>
+                    <td style="width:50%; text-align: left;">Order Notes: Order_Tomchei__c.Description__c</td>
+                </tr>
+            </table>
+            
+            
+            <br/>
+                <h1>Family Code Template</h1>
+            <table style="width:100%">
+                <tr>
+                <td  style="width:50%; text-align: right;"></td>
+                    <td style="width:50%; text-align: left;">!Contact.Family__Code__c</td>
+                </tr>
+            </table>
+        </body>
+    </html>
+</apex:page>

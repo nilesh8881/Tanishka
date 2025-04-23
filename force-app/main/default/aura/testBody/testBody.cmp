@@ -1,0 +1,108 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
+    <div class="tasks-header">
+        <div class="tasks-title">Tasks</div>
+        <button type="button" class="create-task" id="create-task">
+            CREATE TASK
+        </button>
+    </div>
+    <div class="toggle">Hide Completed</div>
+    <div class="tasks">
+        <div class="regular-state task">
+            <hr />
+            <div class="task-header">
+                <span class="left">
+                    <span class="material-icons"> radio_button_unchecked </span>
+                    <span class="task-title">Regular State</span>
+                    <span class="task-separator">&bull;</span>
+                    <span class="task-due-date   ">Due Dec 21</span></span>
+                <span class="right">
+                    <button id="delete-button" class="mdc-icon-button material-icons right"
+                        style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                        <span class="material-icons"> delete </span>
+                    </button>
+                    <button id="edit-button" class="mdc-icon-button material-icons right"
+                        style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                        <span class="material-icons"> edit </span>
+                    </button>
+                </span>
+            </div>
+
+            <div class="task-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, hic.
+            </div>
+
+            <div class="task-info">
+                Created on <span id="created-date"> Mon Dec 21</span> by
+                <span id="created-by"> Mittie Walker</span>
+            </div>
+        </div>
+
+        <div class="error-state task">
+            <hr />
+            <div class="task-header">
+                <span class="left">
+                    <span class="material-icons"> radio_button_unchecked </span>
+                    <span class="material-icons" style="color:#F43708">
+                        priority_high
+                    </span>
+                    <span class="task-title">Error State</span>
+                    <span class="task-separator" style="color:#F43708">&bull;</span>
+                    <span class="task-due-date" style="color:#F43708">Overdue</span></span>
+                <span class="right">
+                    <button id="delete-button" class="mdc-icon-button material-icons right"
+                        style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                        <span class="material-icons"> delete </span>
+                    </button>
+                    <button id="edit-button" class="mdc-icon-button material-icons right"
+                        style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                        <span class="material-icons"> edit </span>
+                    </button>
+                </span>
+            </div>
+
+            <div class="task-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, hic.
+            </div>
+
+            <div class="task-info">
+                Created on <span id="created-date"> Mon Dec 21</span> by
+                <span id="created-by"> Mittie Walker</span>
+            </div>
+        </div>
+
+
+        <div class="regular-state task">
+            <hr />
+            <div class="task-header">
+                <span class="left">
+                    <span class="material-icons"> radio_button_unchecked </span>
+                    <span class="task-title">Attachment State</span>
+                    <span class="task-separator">&bull;</span>
+                    <span class="task-due-date">Due Dec 21</span></span>
+                <span class="right">
+                    <button id="delete-button" class="mdc-icon-button material-icons right"
+                        style=" background-color: Transparent; background-repeat: no-repeat; border: none; ">
+                        <span class="material-icons"> delete </span>
+                    </button>
+                    <button id="edit-button" class="mdc-icon-button material-icons right"
+                        style=" background-color: Transparent; background-repeat: no-repeat;border: none;">
+                        <span class="material-icons"> edit </span>
+                    </button>
+                </span>
+            </div>
+
+            <div class="task-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, hic.
+            </div>
+
+            <div class="task-info">
+                Created on <span id="created-date"> Mon Dec 21</span> by
+                <span id="created-by"> Mittie Walker</span>
+            </div>
+            <div class="attachment">
+                Created on <span id="created-date"> Mon Dec 21</span> by
+                <span id="created-by"> Mittie Walker</span>
+            </div>
+        </div>
+    </div>
+</aura:component>

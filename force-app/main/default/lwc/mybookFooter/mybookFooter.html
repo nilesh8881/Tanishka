@@ -1,0 +1,30 @@
+<template>
+    <slot name="footer">
+      <div class="ug-regular-footer">
+          <a href="#">
+              <span>
+                <img class="myIcons" src={homeIcon} alt="homeIcon" />
+              </span>
+              <span class="helperText">Home</span></a
+            >
+            <a href="#">
+              <span>
+                <img class="myIcons" src={peopleIcon} alt="peopleIcon" />
+              </span>
+              <span class="helperText">Students</span></a
+            >
+            <a href="#">
+              <span> <img class="myIcons" src={todayIcon} alt="todayIcon" /> </span>
+              <span class="helperText">Schedule</span></a
+            >
+            <a onclick={handleNavigate}>
+              <span> <img class="myIcons" src={completedIcon} alt="completedIcon" /> </span>
+              <span class="helperText">Tasks</span></a
+            >
+            <a href="#">
+              <span> <img class="myIcons" src={chatIcon} alt="chat" /> </span>
+              <span class="helperText">Chat</span></a
+            >
+      </div>
+    </slot>
+  </template>

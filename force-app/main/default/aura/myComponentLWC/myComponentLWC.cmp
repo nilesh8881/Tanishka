@@ -1,0 +1,90 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
+    <div class="slds-grid slds-wrap" >
+        <div class="slds-col slds-size_12-of-12" style="padding-top: 1%;background-color: #2e3f5b !important;">
+            <div class="slds-grid slds-grid_align-spread">
+                <!-- Logo -->
+                <div class="slds-global-header__logo" style="width: 4.5rem !important;"></div>
+                <div class="slds-global-header__item" style="margin-right: auto;margin-left: -2%;color: #ffffff;">
+                    <lightning:formattedDateTime value="1479944705000" year="2-digit" month="short" day="2-digit" hour="2-digit"
+                                                 minute="2-digit" />
+                </div>
+                <!-- search box -->
+                <div class="slds-global-header__item slds-global-header__item_search">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <div class="slds-combobox-group">
+                                <div class="slds-combobox_container slds-combobox-addon_end">
+                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" id="primary-search-combobox-id-2">
+                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left slds-global-search__form-element" role="none">
+                                            <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_left iconheight">
+                                                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="utility:search" size="x-small" alternativeText="icon" />
+                                            </span> 
+                                            <input type="text" class="slds-input slds-combobox__input" id="combobox-id-3" aria-autocomplete="list" aria-controls="search-listbox-id-2" aria-expanded="false" aria-haspopup="listbox" autoComplete="off" role="combobox" placeholder="Search Salesforce"
+                                                   />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-global-header__item"> 
+                    <!-- Help button -->
+                    <button class="slds-button slds-button_icon" aria-haspopup="true" title="Help and Training">
+                            <lightning:icon class="slds-icon slds-icon slds-icon_small" style="background-color: #ffffff;" iconName="utility:help" size="x-small" alternativeText="icon" />
+                    </button>
+                    <!-- Notification button -->
+                    <button class="slds-button slds-button_icon" title="no new notifications" aria-live="assertive" aria-atomic="true">
+                            <lightning:icon class="slds-icon slds-icon slds-icon_small" style="background-color: #ffffff;" iconName="utility:notification" size="x-small" alternativeText="icon" />
+                    </button>
+                </div>
+            </div>
+        </div>   
+        <div class="slds-col slds-size_3-of-12" style="padding: 1%;min-height: 400px;background-color: #2e3f5b;">
+            <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                <div class="students_name" id="students_name" style="color: #ffffff;">First Last</div>
+                <div class="hours" id="hours" style="color: #ffffff;">x Hours</div><br/><br/>
+                 
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:today" size="x-small" alternativeText="icon" />
+                        
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Schedule</strong><br/><br/>
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:people" size="x-small" alternativeText="icon" />
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Student Information</strong><br/><br/>
+                
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:event" size="x-small" alternativeText="icon" />
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">CSession</strong><br/><br/>
+                
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:call" size="x-small" alternativeText="icon" />
+                </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Call Log</strong><br/><br/>
+                
+                <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:task2" size="x-small" alternativeText="icon" />
+            </button><strong class="slds-m-left--x-small" style="background-color: #ffffff;">Tasks</strong>
+                
+            </div>
+        </div>
+        <div class="slds-col slds-size_9-of-12">
+        </div>   
+        <div class="slds-col slds-size_12-of-12 slds-docked-form-footer">            
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:home" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Home</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action" title="no new notifications" aria-live="assertive" aria-atomic="true">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:groups" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Students</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:event" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Schedule</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action" title="no new notifications" aria-live="assertive" aria-atomic="true">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:task2" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Tasks</span>
+            <button class="slds-button slds-button_icon slds-button_icon slds-button_icon-small slds-global-actions__help slds-global-actions__item-action" aria-haspopup="true" title="Help and Training">
+                <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="custom:custom112" size="x-small" alternativeText="icon" />
+            </button><span style="background-color: #ffffff;margin-right:20px;">Chat</span>
+        </div>   
+    </div>
+</aura:component>

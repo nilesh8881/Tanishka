@@ -1,0 +1,40 @@
+.slds-col-footer {
+  width: 100vw;
+  height: 54px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 24px -20px #dde5ef, 2px 2px 40px -20px #dde5ef;
+}
+.slds-col-footer{
+  display: flex;
+  flex-direction:row;
+}
+  
+.slds-col-footer .slds-icon {
+  padding-right: 15px;
+  color: #99b1d1;
+  height: 24px;
+  width: 24px;
+}
+.slds-col-footer a:active {
+  color: #0c1017;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.slds-col-footer a:active .slds-icon {
+  background-color: #f9633d;
+  opacity: 1;
+  color: #f9633d;
+}
+.redColor{
+      
+  fill : #FF0000;
+
+}

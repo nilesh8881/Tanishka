@@ -1,0 +1,116 @@
+.ug-regular-header {
+    height: 48px;
+    width: 100vw;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #2e3f5b;
+    display: flex;
+    align-items: center;
+  }
+  .header_logo {
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  .search-field {
+    height: 32px;
+    width: 280px;
+    padding-right: 100px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border-style: none;
+  }
+  font{
+    font-family: Open Sans;
+  }
+  body {
+    margin: 0;
+  }
+  .main {
+    margin-left: 220px;
+    padding: 24px;
+  }
+  .date-time {
+    height: 17px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+  .search-field {
+    height: 32px;
+    width: 300px;
+    padding-right: 100px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border-style: none;
+  }
+  input {
+    width: 100%;
+    caret-color: #ffffff;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-left: 16px;
+  }
+  .input[type="search"]::-webkit-search-decoration,
+  .input[type="search"]::-webkit-search-cancel-button,
+  .input[type="search"]::-webkit-search-results-button,
+  .input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+  :focus {
+    outline: none;
+  }
+  ::placeholder {
+    height: 19px;
+    width: 203px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+  }
+  .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    background: #657ca4;
+    display: inline-block;
+    margin-right: 16px;
+  }
+  .avatar_name {
+    height: 24px;
+    width: 10px;
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  /* REGULAR HEADER END */

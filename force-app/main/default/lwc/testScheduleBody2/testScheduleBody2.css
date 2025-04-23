@@ -1,0 +1,60 @@
+.top {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    display: flex;
+  }
+  .bottom {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+  .days {
+    box-sizing: border-box;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding-right: 24px;
+    color: #0c1017;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    text-align: center;
+  }
+  .startTime {
+    height: 48px;
+    width: 150px;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    margin-left: 14px;
+    white-space: nowrap;
+  }
+  .monthYear {
+    box-sizing: border-box;
+    height: 48px;
+    width: 86px;
+    border: 1px solid #99b1d1;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    white-space: nowrap;
+  }
+  .dropDown {
+    box-sizing: border-box;
+    height: 48px;
+    width: 150px;
+    border: 1px solid #99b1d1;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding-right: 24px;
+    margin-right: 14px;
+  }
+  .dropDownText {
+    font-family: "Source Sans Pro";
+    color: #0c1017;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-left: 6px;
+    white-space: nowrap;
+  }

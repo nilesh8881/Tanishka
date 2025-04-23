@@ -1,0 +1,36 @@
+<template>
+    <div class="slds-progress slds-progress_vertical">
+        <ol class="slds-progress__list">
+            <template for:each={steplist} for:item="steps">
+                <li class="slds-progress__item slds-is-completed" key={steps}>
+                    <div class="slds-progress__marker "></div>
+                    <div class=" slds-progress__item_content sld ">
+                        <!--<button class="slds-button">{steps.Step}</button>-->
+                        <p>{steps.Step}
+                            <lightning-button label={clickedButtonLabel} title="Show" onclick={handleClick} icon-name={toggleIconName}
+                                class="slds-m-bottom_medium " style="margin-left: 10%;"></lightning-button></p>
+                        <p>{steps.Name}</p>
+                    </div>
+                        <!--<div class="abc">
+                            
+                            <div class="slds-m-left-large">Step1</div>
+                            <template if:true={boolVisible}>
+                    
+                    
+                                <div class=" slds-p-around-medium">
+                                    <ul class="horizantal-list">
+                                        <li class="def">Child1</li>
+                                        <li class="def1">child2</li>
+                                    </ul>
+                                    
+                                </div>
+                    
+                            </template>
+                    
+                        </div>-->
+                    
+                </li>
+            </template>
+        </ol>
+    </div>
+</template>

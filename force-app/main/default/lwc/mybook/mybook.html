@@ -1,0 +1,67 @@
+<template>
+    <slot name="header">
+      <lightning-layout>
+        <div class="ug-regular-header">
+          <span class="left">
+            <!-- Logo -->
+            <lightning-layout-item padding="around-small">
+              <div>
+                <img class="logo" src={svgUrl} alt="Salesforce Logo" />
+              </div>
+            </lightning-layout-item>
+  
+            <!-- Date & Time -->
+            <lightning-layout-item padding="around-small">
+              <div class="date-time">
+                <lightning-formatted-date-time
+                  value={currentTime}
+                  month="short"
+                  day="2-digit"
+                  weekday="long"
+                  hour="2-digit"
+                  minute="2-digit"
+                ></lightning-formatted-date-time>
+              </div>
+            </lightning-layout-item>
+          </span>
+          <span class="right">
+            <!-- search box -->
+            <lightning-layout-item padding="around-small">
+              <span>
+                <form action="/" method="GET" class="form">
+                  <input
+                    type="search"
+                    placeholder="Search name, school or subject
+                "
+                    class="search-field"
+                  />
+                  <button type="submit" class="search-button">
+                    <span>
+                      <img class="myIcons" src={searchIcon} alt="searchIcon" />
+                    </span>
+                  </button>
+                </form>
+              </span>
+            </lightning-layout-item>
+  
+            <!-- notification -->
+            <lightning-layout-item padding="around-small">
+              <div>
+                <img
+                  class="notification"
+                  src={notificationIcon}
+                  alt="notification"
+                />
+              </div>
+            </lightning-layout-item>
+            <!-- Avatar -->
+            <lightning-layout-item padding="around-small">
+              <span class="avatar">
+                <span class="avatar_name">M</span>
+              </span>
+            </lightning-layout-item>
+          </span>
+        </div>
+      </lightning-layout></slot
+    >
+  </template>

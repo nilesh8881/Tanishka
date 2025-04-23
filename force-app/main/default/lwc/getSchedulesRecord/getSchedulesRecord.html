@@ -1,0 +1,72 @@
+<template>
+    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" aria-label="Example table of Opportunities with no row hovers">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate">
+                        Day
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">
+                        Start Time
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">
+                        Duration
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">
+                        Subject
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">
+                        Status
+                    </div>
+                </th>        
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={wiredSchedules.data} for:item="sch">
+                <tr class="slds-hint-parent" key={sch.id}>        
+                    <td data-label="Day">
+                        <div class="slds-truncate">
+                            {sch.Day__c}
+                        </div>
+                    </td>
+                    <td data-label="Start Time">
+                        <div class="slds-truncate">
+                            {sch.Start_Time__c}
+                        </div>
+                    </td>
+                    <td data-label="Duration">
+                        <div class="slds-truncate">
+                            {sch.Duration__c}
+                        </div>
+                    </td>
+                    <td data-label="Subject">
+                        <div class="slds-truncate">
+                            {sch.Subject__c}
+                        </div>
+                    </td>
+                    <td data-label="Status">
+                        <div class="slds-truncate">
+                            {sch.Status__c}
+                        </div>
+                    </td>
+                    <td class="slds-cell_action-mode" role="gridcell">
+                        <button 
+                            style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                            <span>
+                                <lightning-icon class="slds-icon " icon-name="utility:edit" size="small" ></lightning-icon>
+                            </span>
+                        </button> 
+                    </td>
+                </tr>
+            </template>        
+        </tbody>
+    </table>
+</template>

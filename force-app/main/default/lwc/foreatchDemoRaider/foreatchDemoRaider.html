@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  variant="Narrow"  title="For Eatch Demo" icon-name="standard:account">
+        <template if:true={accounts.data}>
+            <template for:each={accounts.data} for:item="accounts">
+                <h3 key={accounts.id}>{accounts.Name}</h3>
+            </template>
+        </template>
+        <template if:true={accounts.error}>
+            {accounts.data}
+        </template>
+       
+    </lightning-card>
+</template>

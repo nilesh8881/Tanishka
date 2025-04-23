@@ -1,0 +1,7 @@
+.dummy{
+	color : black;
+}
+:host{
+	--sds-c-checkbox-color-background-checked: yellow;
+	--sds-c-checkbox-color-background: green;
+}

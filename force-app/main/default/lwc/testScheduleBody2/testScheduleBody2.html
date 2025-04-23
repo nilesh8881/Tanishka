@@ -1,0 +1,34 @@
+<template>
+    <div class="top">
+      <button class="days sunday" id="sunday">Sun</button>
+      <button class="days monday" id="monday">Mon</button>
+      <button class="days tuesday" id="tuesday">Tue</button>
+      <button class="days wednesday" id="wednesday">Wed</button>
+      <button class="days thursday" id="thursday">Thu</button>
+      <button class="days friday" id="friday">Fri</button>
+      <button class="days saturday" id="saturday">Sat</button>
+      <button type="button" class="startTime" id="startTime">
+        <span class="dropDownText"
+          >Start Time &nbsp;&nbsp;&nbsp;
+          <img class="scheduleIcon" src={scheduleIcon} alt="scheduleIcon"
+        /></span>
+      </button>
+    </div>
+    <div class="bottom">
+      <button type="button" class="dropDown" id="duration">
+        <span class="dropDownText">Duration</span>
+      </button>
+      <button type="button" class="dropDown" id="dropDown">
+        <span class="dropDownText"
+          >Subject&nbsp;&nbsp;&nbsp;
+          <img class="dropDownIcon" src={dropDownIcon} alt="dropDownIcon"
+        /></span>
+      </button>
+      <button type="button" class="monthYear" id="thisMonth">
+        <span class="dropDownText">This Month</span>
+      </button>
+      <button type="button" class="monthYear" id="thisYear">
+        <span class="dropDownText">This Year</span>
+      </button>
+    </div>
+  </template>

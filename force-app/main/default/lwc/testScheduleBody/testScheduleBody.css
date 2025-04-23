@@ -1,0 +1,57 @@
+.main {
+    size: 100%;
+    padding: 32px;
+    margin-top: 32px;
+    margin-left: 220px;
+    margin-bottom: 56px;
+  }
+  .title {
+    color: #0c1017;
+    font-family: "Titillium Web";
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    padding-bottom: 16px;
+  }
+  .save {
+    height: 48px;
+    width: 88px;
+    border-radius: 3px;
+    background-color: #f1623a;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    margin-left: 0px;
+    float: right;
+    margin-right: 16px;
+  }
+  .cancel {
+    height: 48px;
+    width: 88px;
+    border-radius: 3px;
+    background-color: #dde5ef;
+    color: #0c1017;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    margin-left: 0px;
+    float: right;
+    margin-right: 16px;
+  }
+  hr {
+    width: 99%;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  
+    background-color: #dde5ef;
+  }

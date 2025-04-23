@@ -1,0 +1,270 @@
+<template>
+    <div class="ug-regular-header">
+        <!-- Logo -->
+        <span class="left">
+            <!-- Logo -->
+            <img id="header_logo" src="/images/header_logo.jpg" alt="header logo" />
+        </span>
+        <span class="right"></span>  
+        <div style="margin-right: auto;margin-left: 1%;color: #ffffff;">
+            <lightning-formatted-date-time value="1479944705000"  year="2-digit" month="short" day="2-digit" hour="2-digit"
+            minute="2-digit" ></lightning-formatted-date-time> 
+        </div>
+        <!-- search box -->
+        <span>
+            <form action="/" method="GET" class="form">
+                <input type="search" placeholder="Search name, school or subject" class="search-field" />
+                <button style="margin-left: -15%;" type="submit" class="search-button" id="search-button" >
+                    <span class="fa fa-search" 
+                        style="color: #f9633d; width: 20px; height: 20px; object-fit: cover">
+                    </span>
+                </button>
+            </form>
+        </span>
+        <div class="slds-global-header__item"> 
+            <!-- Notification button -->
+            <button class="slds-button  slds-button_icon"  title="no new notifications" aria-live="assertive" aria-atomic="true" >
+                <lightning-icon   icon-name="utility:notification" size="small" alternative-text="icon" ></lightning-icon>
+            </button>
+            
+
+            <!-- Help button -->
+            <button class="slds-button slds-button_icon" aria-haspopup="true" title="Help and Training">
+                    <lightning-icon style="background-color: #ffffff;" icon-name="utility:help" size="small" alternative-text="icon" ></lightning-icon>
+            </button>
+        </div>
+    </div>
+             <!--Body-->
+    <div class="main" style="margin-left:220px; padding:1%;">
+        <h1 class="slds-page-header__title">
+            <b>Schedule</b> 
+        </h1></br>
+        <div class="demo-only slds-box " style="width:100%">
+            <article class="slds-tile">
+                <div class="slds-tile__detail">
+                <dl class="slds-list_horizontal slds-wrap">
+                    <dt class="slds-item_label " title="First Label"><b>Location</b></dt>
+                    <dd class="slds-item_detail" title="Description for first label">School</dd>
+                    
+                    <dt class="slds-item_label " title="Second Label"><b>Suggested Time</b></dt>
+                    <dd class="slds-item_detail" title="Description for second label"> 10:00 AM</dd>
+                    <dt class="slds-item_label " title="Second Label"><b>Admin Notes</b></dt>
+                    <dd class="slds-item_detail" title="Description for second label">Can not be seen in the afternoon</dd>
+                </dl>
+                <span class="slds-badge">Math</span> <span class="slds-badge">English</span>
+                </div>
+            </article>
+            </div></br>
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" aria-label="Example table of Opportunities with no row hovers">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate">
+                            Day
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">
+                            Start Time
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">
+                            Duration
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">
+                            Subject
+                        </div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">
+                            Status
+                        </div>
+                    </th>        
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={wiredSchedules.data} for:item="sch">
+                    <tr class="slds-hint-parent" key={sch.id}>        
+                        <td data-label="Day">
+                            <div class="slds-truncate">
+                                {sch.Day__c}
+                            </div>
+                        </td>
+                        <td data-label="Start Time">
+                            <div class="slds-truncate">
+                                {sch.Start_Time__c}
+                            </div>
+                        </td>
+                        <td data-label="Duration">
+                            <div class="slds-truncate">
+                                {sch.Duration__c}
+                            </div>
+                        </td>
+                        <td data-label="Subject">
+                            <div class="slds-truncate">
+                                {sch.Subject__c}
+                            </div>
+                        </td>
+                        <td data-label="Status">
+                            <div class="slds-truncate">
+                                {sch.Status__c}
+                            </div>
+                        </td>
+                        <td class="slds-cell_action-mode" role="gridcell">
+                            <button 
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span>
+                                    <lightning-icon class="slds-icon " icon-name="utility:edit" size="small" ></lightning-icon>
+                                </span>
+                            </button> 
+                        </td>
+                    </tr>
+                </template>        
+            </tbody>
+        </table>
+        <div>
+            <table>
+                <tr>
+                <th>Day</th>
+                <th>Time </th>
+                <th>Duration</th>
+                <th>Subject</th>
+                <th>Effective</th>
+                <th></th>
+                
+                </tr>
+            <tr>
+                <td>Monday </td>
+                <td>10:30 AM</td>
+                <td>60 min</td>
+                <td>Math </td>
+                <td>This Month</td>
+                <td><button 
+                    style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                    <span><lightning-icon class="slds-icon " icon-name="utility:edit" size="small" ></lightning-icon>
+                    </span>
+                </button>
+                </td>
+            </tr>
+            </table>
+            <!--Create Schedule Record-->
+        </div>
+        <lightning-card title="Create Schedule Record">
+        
+            <div class="slds-grid slds-wrap" style="margin:1%">
+    
+                <div class="slds-p-around_medium lgc-bg "> 
+            <!-- Displaying fields to get information. -->
+            <lightning-combobox style="margin:1%" label="Status" 
+                name="Status__c" 
+                onchange={statusChangedHandler} 
+                options={statusValues} 
+                placeholder="--None--" 
+                value={selectedStatus}>
+            </lightning-combobox>
+            </div>
+
+            <div class="slds-p-around_medium lgc-bg ">
+            <lightning-combobox style="margin:1%" label="Subject" 
+                name="Subject__c" 
+                onchange={subjectChangedHandler} 
+                options={SubjectValues} 
+                placeholder="--None--" 
+                value={selectedSubject}>
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-p-around_medium lgc-bg ">
+            <lightning-combobox style="margin:1%" label="Repeat" 
+                name="Repeat__c" 
+                onchange={repeatChangedHandler} 
+                options={RepeatValues} 
+                placeholder="--None--" 
+                value={selectedRepeat}>
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-p-around_medium lgc-bg ">
+            <lightning-combobox style="margin:1%" label="Day" 
+                name="Day__c" 
+                onchange={dayChangedHandler} 
+                options={DayValues} 
+                placeholder="--None--" 
+                value={selectedDay}>
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-p-around_medium lgc-bg ">    
+           
+            <lightning-input type="Time" 
+                             name="CustomObjectName" 
+                             label="Start Time"
+                             value={custObjRecord.Start_Time__c} 
+                             onchange={startTimeChangedHandler} 
+                             class="slds-m-right_small"
+                             style="margin:1%"
+                             placeholder="Enter Email">
+            </lightning-input>
+        </div>   
+
+        <div class="slds-p-around_medium lgc-bg ">    
+           
+            <lightning-input type="Number" 
+                             name="Duration__c" 
+                             label="Duration"
+                             value={custObjRecord.Duration__c} 
+                             onchange={numberChangedHandler} 
+                             class="slds-m-right_small"
+                             style="margin:1%"
+                             placeholder="type here..."
+                             >
+
+            </lightning-input>
+        </div>
+            </div>
+        </lightning-card>
+        
+            <div class="slds-m-top_small slds-m-bottom_medium  slds-float_right">
+                <lightning-button label="Cancel" title="Non-primary action" onclick={handleClick} class="slds-m-left_small">
+                </lightning-button>
+                
+            <lightning-button variant="brand" label="Save" title="Primary action" onclick={handleClick} class="slds-m-left_small">
+            </lightning-button>
+    </div>  
+    <!--Button Sidebar-->
+        <div class="sidebar" >
+        
+            <div class="students_name" id="students_name">First Last</div><br>
+            <div class="hours" id="hours">6 Hours</div><br/><br/>
+        <!--hyperlinked sidebar-->
+            <a href="#"><span><lightning-icon class="slds-icon" icon-name="utility:clock"  size="small" ></lightning-icon>
+            </span><strong class="slds-m-left-small">Schedule</strong></a><br/><br/>
+
+
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:user" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">Student Information</strong></a><br/><br/>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:event" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">CSession</strong></a><br/><br/>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:call" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">Call Log</strong></a><br/><br/>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:page" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">Tasks</strong></a><br/><br/>
+            
+        </div>   
+    </div>
+        <!--Footer-->
+        <div class="slds-col-footer slds-size_12-of-12 slds-docked-form-footer">            
+                
+            <div class="reuler-footer" >
+                <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:home" size="small" alternative-text="icon"></lightning-icon></span></span><span style="padding-right:200px;">Home</span></a>
+                <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:people" size="small" alternative-text="icon"></lightning-icon></span><span style="padding-right:200px;">Student</span></a>
+                <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:event" size="small" alternative-text="icon"></lightning-icon></span></span><span style="padding-right:200px;">Schedule</span></a>
+                <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:success" size="small" alternative-text="icon"></lightning-icon></span></span><span style="padding-right:200px;">Tasks</span></a>
+                <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:anywhere_chat" size="small" alternative-text="icon"></lightning-icon></span><span style="padding-right:200px;">Chat</span></a>
+                
+            </div>  
+        </div> 
+</template>

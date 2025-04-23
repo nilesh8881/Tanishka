@@ -1,0 +1,91 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    height: 145px;
+    width: 100%;
+    margin-left:0%;
+    border-radius: 3px;
+    box-shadow: 0 2px 24px 0 #dadff6, 0 2px 40px 0 #f9fafc;
+    transition: 0.3s;
+    background-color: white;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  .row {
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title1 {
+    color: #0c1017;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 70px;
+  }
+  .title2 {
+    color: #0c1017;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+  .title3 {
+    color: #0c1017;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 41px;
+  }
+  
+  .secondary {
+    color: #0c1017;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-left: 0px;
+  }
+  
+  .info {
+    color: #7e8da5;
+    font-family: "Open Sans italic";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  .chip {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #dde5ef;
+    border: none;
+    cursor: default;
+    height: 24px;
+    outline: none;
+    margin-right: 8px;
+    color: #475976;
+    font-family: "Open Sans";
+    font-size: 14px;
+    white-space: nowrap;
+    align-items: center;
+    border-radius: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .chip-content {
+    cursor: inherit;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+  }

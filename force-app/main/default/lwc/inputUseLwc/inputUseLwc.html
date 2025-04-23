@@ -1,0 +1,42 @@
+<template>
+    <div> All Input </div>
+    <!-- Checkbox -->
+    <lightning-input type="checkbox" label="red" checked></lightning-input>
+    <lightning-input type="checkbox" label="blue"></lightning-input>
+    <!-- Checkbox  button -->
+    <lightning-input type="checkbox-button" label="XYZ" value="pepperoni" checked></lightning-input>
+    <!-- date -->
+    <lightning-input type="date" label="Birthday"> </lightning-input>
+    <!--date time -->
+    <lightning-input type="datetime" label="Created date"> </lightning-input>
+    <!--Simple Email -->
+    <lightning-input type="email" label="Email"> </lightning-input>
+    <!--Simple Email -->
+    <lightning-input type="email" label="Email" pattern=".+@example.com" placeholder="username@example.com"></lightning-input>
+    <!--Simple Email -->
+    <lightning-input type="email" label="Email" maxlength="50" message-when-too-long="Your email address must not be more than 50 characters."></lightning-input>
+    <!--multiple Email -->
+    <lightning-input type="email" label="Email" multiple> </lightning-input>
+    <!-- file -->
+    <lightning-input type="file" label="Attachment" accept="image/png, .zip" onchange={handleFilesChange} multiple></lightning-input>
+    <!-- number -->
+    <lightning-input type="number" label="Number" value="12345"></lightning-input>
+    <!--  decimal number -->
+    <lightning-input type="number" label="Number" step=".01" value="123.45"></lightning-input>
+    <lightning-input type="number" label="Enter a decimal value" step="0.001"></lightning-input>
+    <lightning-input type="number" label="Enter a percentage value" formatter="percent" step="0.01"></lightning-input>
+    <lightning-input type="number" label="Enter a dollar amount"    formatter="currency" step="0.01"></lightning-input>
+    <!-- password -->
+    <lightning-input type="password" label="Password"> </lightning-input>
+    <!-- range -->
+    <lightning-input type="range" label="Number" min="0" max="10"></lightning-input>
+    <!-- search -->
+    <lightning-input type="search" label="Search"> </lightning-input>
+
+
+
+
+
+
+
+</template>

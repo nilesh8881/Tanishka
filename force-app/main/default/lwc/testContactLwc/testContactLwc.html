@@ -1,0 +1,41 @@
+<template>
+    <!-- Search Contact -->
+    
+    <!--<lightning-card  title="Contact Search" icon-name="standard:contact">
+        <div class="slds-m-around_medium">
+            <lightning-input type="search" label="Search Contact" onchange={handleSearch}></lightning-input>
+        </div>
+        <template if:true={contacts.data}>
+            <lightning-datatable key-field="Id" data={contacts.data} columns={columns} onrowaction={handleRowAction}></lightning-datatable>
+        </template>
+    </lightning-card>
+
+    <lightning-record-edit-form if:true={showEditForm} record-id={selectedContactId} object-api-name="Contact" onsubmit={handleEditFormSubmit}>
+        <lightning-messages></lightning-messages>
+        <lightning-input-field field-name="FirstName"></lightning-input-field>
+        <lightning-input-field field-name="LastName"></lightning-input-field>
+        <lightning-input-field field-name="Email"></lightning-input-field>
+        <div class="slds-m-top_medium">
+            <lightning-button type="submit" label="Save"></lightning-button>
+            <lightning-button label="Cancel" onclick={handleEditFormCancel}></lightning-button>
+        </div>
+    </lightning-record-edit-form>
+    <lightning-modal if:true={showDeleteModal} header="Confirm Delete" message="Are you sure you want to delete this contact?" oncancel={handleDeleteModalCancel} onconfirm={handleDeleteModalConfirm}></lightning-modal>-->
+
+     <lightning-card title="Search Contacts">
+        <lightning-input type="text" label="Search" value={searchKey} onchange={handleSearchKeyChange}></lightning-input>
+        <lightning-datatable key-field="Id" data={contacts} columns={columns} onrowaction={handleRowActions}></lightning-datatable>
+    </lightning-card>
+
+    <!-- Create Contact -->
+    <lightning-card title="Create custom contact." icon-name="standard:contact">
+        <div class="slds-p-horizontal_small">
+            <lightning-input label="First Name" value={firstname} onchange={contactHandleChange} class="slds-m-bottom_x-small slds-p-horizontal_small slds-form-element"></lightning-input>
+            <lightning-input label="Last Name" value={lastname} onchange={contactHandleChange} class="slds-m-bottom_x-small slds-p-horizontal_small slds-form-element"></lightning-input>
+            <lightning-input label="Phone" value={phone} onchange={contactHandleChange} class="slds-m-bottom_x-small slds-p-horizontal_small slds-form-element"></lightning-input>
+            <lightning-input label="Email" value={email} onchange={contactHandleChange} class="slds-m-bottom_x-small slds-p-horizontal_small slds-form-element"></lightning-input>
+            <lightning-button label="Submit" variant="brand" onclick={createLookupContactAction} class="slds-m-bottom_x-small slds-p-horizontal_small slds-form-element"></lightning-button>
+        </div>
+</lightning-card>
+
+ </template>

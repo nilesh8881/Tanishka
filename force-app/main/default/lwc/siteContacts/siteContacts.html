@@ -1,0 +1,57 @@
+<template>
+  <lightning-card variant="Narrow" title="Contact" icon-name="custom:custom15">
+    <lightning-button variant="brand" label="New" onclick={handleclick} slot="actions"></lightning-button>
+    <div class="slds-grid slds-wrap">
+      <template if:true={contacts.data}>
+
+        <template for:each={contacts.data} for:item="item" for:index="index">
+          <div class="slds-col slds-size_1-of-2" key={item.id}>
+            <lightning-card variant="Narrow" title={item.Name} icon-name="standerd:contact" key={item.id}>
+              <lightning-button-menu alternative-text="Show menu" variant="border-filled" onselect={handelOnselect}
+                slot="action">
+                <lightning-menu-item value={item.id} label="Edit" onclick={handleclick}></lightning-menu-item>
+                <lightning-menu-item value={item.id} label="Delete" onclick={handleclick}></lightning-menu-item>
+              </lightning-button-menu>
+              <p>{item.FirstName} {item.LastName}</p>
+              <p>{item.Email}</p>
+              <p>{item.Phone}</p>
+            </lightning-card>
+          </div>
+          <div key={item.Id} class="slds-border_top"></div>
+        </template>
+      </template>
+    </div>
+  </lightning-card>
+  <template if:true={showTab1}>
+    <lightning-button variant="brand" label="New" onclick={handleclick} slot="actions"></lightning-button>
+    <div class="slds-m-vertical_medium">
+      <p>The value of the menu item you selected is: <span class="slds-text-heading_small">Delete :- {clickbuttonlabel}</span>
+      </p>
+    </div>
+  </template>
+  <!--<template if:true={showTab2}>
+    <lightning-button variant="brand" label="Save" onclick={handleclick} slot="actions"></lightning-button>
+    <div class="slds-m-vertical_medium">
+      <p>The value of the menu item you selected is: <span class="slds-text-heading_small">NEW :- {clickbuttonlabel}</span>
+      </p>
+    </div>
+    </div>
+  </template>
+  <template if:true={showTab3}>
+    <lightning-button variant="brand" label="Edit" onclick={handleclick} slot="actions"></lightning-button>
+    <div class="slds-m-vertical_medium">
+      <p>The value of the menu item you selected is: <span class="slds-text-heading_small">Save :- {clickbuttonlabel}</span>
+      </p>
+    </div>
+    </div>
+  </template>
+  <template if:true={showTab4}>
+    <lightning-button variant="brand" label="Delete" onclick={handleclick} slot="actions"></lightning-button>
+    <div class="slds-m-vertical_medium">
+      <p>The value of the menu item you selected is: <span class="slds-text-heading_small">Edit :- {clickbuttonlabel}</span>
+      </p>
+    </div>
+    </div>
+  </template>-->
+
+</template>

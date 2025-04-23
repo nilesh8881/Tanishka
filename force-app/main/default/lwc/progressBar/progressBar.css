@@ -1,0 +1,32 @@
+.bar {
+    list-style: none;
+  }
+  .bar >li {
+    position: relative;
+  }
+  .bar>li:before {
+    content: '\25CF';
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(167, 165, 165);
+    
+  }
+  .bar>li:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-left: 2px solid rgb(167, 165, 165);
+    margin-left: 5px;
+    height: 100%;
+  }
+  .bar >li:first-of-type:after {
+    top: 50%;
+    transform: rotate(180deg);
+    
+  }
+  .bar >li:last-of-type:after {
+    top: -90%;
+    transform: rotate(90deg);
+    left: -20%;
+  }

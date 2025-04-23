@@ -1,0 +1,23 @@
+.THIS.ug-regular-footer a {
+    width: 100%;
+    padding: 12px 36px 12px 36px;
+    margin-right: 18px;
+    margin-left: 18px;
+    text-decoration: none;
+    opacity: 0.6;
+    
+    display: flex;
+    align-items: center;
+} 
+.THIS.ug-regular-footer {
+    
+    height: 56px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 24px -20px #dde5ef, 2px 2px 40px -20px #dde5ef;
+}

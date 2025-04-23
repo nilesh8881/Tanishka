@@ -1,0 +1,55 @@
+<template>
+    <slot name="header">
+      <lightning-layout>
+        <div class="ug-regular-header">
+          <span class="left">
+            <!-- Logo -->
+            <lightning-layout-item padding="around-small">
+              <div>
+                <img class="logo" src={svgUrl} alt="Header Logo" />
+              </div>
+            </lightning-layout-item>
+  
+            <!-- Date & Time -->
+            <span class="right"></span>  
+              <div style="margin-right: auto;margin-left: 0%;color: #ffffff;">
+                  <lightning-formatted-date-time value="1479944705000"  year="2-digit" month="short" day="2-digit" hour="2-digit"
+                  minute="2-digit" ></lightning-formatted-date-time> 
+              </div>
+          </span>
+          <span class="right">
+            <!-- search box -->
+            <lightning-layout-item padding="around-small">
+              <span>
+                <form action="/" method="GET" class="form">
+                  <input
+                    type="search"
+                    placeholder="Search name, school or subject"
+                    class="search-field"
+                  />
+                  <button type="submit" class="search-button">
+                    <span class="fa fa-search" 
+                        style="color: #f9633d; width: 20px; height: 20px; object-fit: cover">
+                    </span>
+                  </button>
+                </form>
+              </span>
+            </lightning-layout-item>
+  
+            <!-- notification -->
+            <lightning-layout-item padding="around-small">
+                <button class="slds-button  slds-button_icon"  title="no new notifications" aria-live="assertive" aria-atomic="true" >
+                    <lightning-icon   icon-name="utility:notification" size="small" alternative-text="icon" ></lightning-icon>
+                </button>
+            </lightning-layout-item>
+            <!-- Avatar -->
+            <lightning-layout-item padding="around-small">
+              <span class="avatar">
+                <span class="avatar_name">A</span>
+              </span>
+            </lightning-layout-item>
+          </span>
+        </div>
+      </lightning-layout></slot
+    >
+  </template>

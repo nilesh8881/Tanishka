@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Contact Records">
+    <lightning-button
+      variant="brand"
+      label="New"
+      onclick={handleNewRecord}
+    ></lightning-button>
+    <lightning-datatable
+      data={contacts}
+      columns={columns}
+      key-field="id"
+      onrowaction={handleRowAction}
+    ></lightning-datatable>
+    
+  </lightning-card>
+</template>

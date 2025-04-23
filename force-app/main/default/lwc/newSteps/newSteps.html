@@ -1,0 +1,43 @@
+<template>
+    <div class="abc">
+        <div class="slds-float--right " style="float: 100%;">
+            <lightning-button label={clickedButtonLabel} title="Show" onclick={handleClick} icon-name={toggleIconName}
+                class="slds-m-bottom_medium "></lightning-button>
+        </div>
+        <div class="slds-m-left--large">Step1</div>
+        <template if:true={boolVisible}>
+
+
+            <div class=" slds-p-around--medium">
+                <ul class="horizantal-list">
+                    <li class="def">Child1</li>
+                    <li class="def1">child2</li>
+                </ul>
+                
+            </div>
+
+        </template>
+
+    </div>
+    <div class="xyz">
+        <div  class="yz" style="margin-right:80%;">
+            <lightning-button label={clickedButtonLabel} title="Show" onclick={handleClick} icon-name={toggleIconName}
+                class="slds-m-bottom_medium "></lightning-button>
+        </div>
+        <div class="slds-m-left--large">Step2</div>
+        <template if:true={boolVisible}>
+
+
+            <div class=" slds-p-around--medium">
+                <ul class="horizantal-list">
+                    <li class="def">Child3</li>
+                    <li class="def1">child4</li>
+                </ul>
+                
+            </div>
+
+        </template>
+
+    </div>
+
+</template>

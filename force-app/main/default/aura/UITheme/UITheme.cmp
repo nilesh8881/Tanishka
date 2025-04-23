@@ -1,0 +1,45 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="Sample Custom Theme Layout">
+    <aura:attribute name="search" type="Aura.Component[]" required="false" />
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false" />
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false" />
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false" />
+    <aura:attribute name="blueBackground" type="Boolean" default="false" />
+    <aura:attribute name="smallLogo" type="Boolean" default="false" />
+    <aura:attribute name="siteName" type="String" default="" />
+    <aura:attribute name="newFooter" type="Aura.Component[]" required="false" />
+    <!--<div>
+        <div class="searchRegion" style='background-color:red'>
+            {!v.search}
+        </div>
+        <div class="profileMenuRegion" style='background-color:green'>
+            {!v.profileMenu}
+        </div>
+        <div class="navigation" style='background-color:yellow'>
+            {!v.navBar}
+        </div>
+        <div class="newHeader" style='background-color:blue'>
+            {!v.newHeader}
+        </div>
+        <div class="mainContentArea" style='background-color:brown'>
+            {!v.body}
+        </div>
+    </div>-->
+    <!--<div>
+        <c:UIHeader />
+    </div>-->
+    <div>
+        <div>
+            {!v.newHeader}
+        </div>
+        {!v.navBar}            
+        <div class="main">
+            <!-- Side navigation -->        
+            
+            {!v.body}asd
+            <div class="ug-regular-footer">
+                {!v.newFooter}
+            </div>
+        </div>
+        
+    </div>
+</aura:component>

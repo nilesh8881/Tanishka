@@ -1,0 +1,72 @@
+<template>
+    <svg style="display:none">
+        <defs>
+          <symbol id="progress-step" viewBox="0 0 6 6">
+            <circle cx="3" cy="3" r="2" />
+          </symbol>
+          <symbol id="progress-bar" viewBox="0 0 6 6" preserveAspectRatio="none">
+            <rect height="3" width="6" y="1.5" x="0" stroke-width="4" />
+          </symbol>
+        </defs>
+      </svg>
+      <div class="widget-content" data-step="1">
+        <div class="progress-borders">
+          <svg class="progress-step">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+        </div>
+      
+        <div class="progress-details">
+          <svg class="progress-step progress-step1">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step progress-step2">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step progress-step3">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step progress-step4">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+        </div>
+      
+        <svg class="progress-empty-border">
+          <use xlink:href="#progress-bar"></use>
+        </svg>
+        <svg class="progress-empty">
+          <use xlink:href="#progress-bar"></use>
+        </svg>
+        <div class="progress-indicator-container">
+          <svg class="progress-indicator">
+            <use xlink:href="#progress-bar"></use>
+          </svg>
+        </div>
+        <div class="progress-transit">
+          <svg class="progress-step-transit-border">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+          <svg class="progress-step-transit">
+            <use xlink:href="#progress-step"></use>
+          </svg>
+        </div>
+        <svg class="progress-check" viewBox="0 0 30 30">
+          <g transform="rotate(30 15 16)">
+            <rect height="25" width="5" rx="3" ry="3" x="15" y="0" />
+            <rect height="5" width="15" rx="3" ry="3" x="5" y="20" />
+          </g>
+        </svg>
+      </div>
+      
+      <button class="next">Next</button>
+      <button class="prev">Prev</button>
+</template>

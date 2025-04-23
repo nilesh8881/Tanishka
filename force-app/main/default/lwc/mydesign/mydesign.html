@@ -1,0 +1,207 @@
+<template>
+    <div class="ug-regular-header">
+        <!-- Logo -->
+        <span class="left">
+            <!-- Logo -->
+            <img id="header_logo" src="/images/header_logo.jpg" alt="header logo" />
+        </span>
+        <span class="right"></span>  
+        <div style="margin-right: auto;margin-left: 1%;color: #ffffff;">
+            <lightning-formatted-date-time value="1479944705000"  year="2-digit" month="short" day="2-digit" hour="2-digit"
+            minute="2-digit" ></lightning-formatted-date-time> 
+        </div>
+        <!-- search box -->
+        <span>
+            <form action="/" method="GET" class="form">
+                <input type="search" placeholder="Search name, school or subject" class="search-field" />
+                <button style="margin-left: -15%;" type="submit" class="search-button" id="search-button" >
+                    <span class="fa fa-search" 
+                        style="color: #f9633d; width: 20px; height: 20px; object-fit: cover">
+                    </span>
+                </button>
+            </form>
+        </span>
+        <div class="slds-global-header__item"> 
+            <!-- Notification button -->
+            <button class="slds-button  slds-button_icon"  title="no new notifications" aria-live="assertive" aria-atomic="true" >
+                <lightning-icon   icon-name="utility:notification" size="small" alternative-text="icon" ></lightning-icon>
+            </button>
+            
+
+            <!-- Help button -->
+            <button class="slds-button slds-button_icon" aria-haspopup="true" title="Help and Training">
+                    <lightning-icon style="background-color: #ffffff;" icon-name="utility:help" size="small" alternative-text="icon" ></lightning-icon>
+            </button>
+        </div>
+    </div>
+    <!--Body-->
+    <div class="main">
+        <div class="tasks hr" style="width: 100%;" >
+            <div class="tasks-header">
+                <div class="tasks-title" style="margin-top:5%;">Tasks</div>
+                <button type="button" class="create-task" style="margin-top:5%;" id="create-task">
+                    CREATE TASK
+                </button>
+            </div>
+            <div class="toggle">Hide Completed</div>
+            <div class="tasks">
+                <!--Body task 1-->
+                <div class="regular-state task">
+                    <hr />
+                    <div class="task-header">
+                        <span class="left">
+                            <span> <lightning-radio-group name="radioGroup"
+                                options={options}
+                                value={value}
+                                type="radio">
+                            </lightning-radio-group> 
+                                
+                            <input type="radio" name="fav_language" value="HTML" ></span>
+                            <span class="task-title">Regular State</span>
+                            <span class="task-separator">&bull;</span>
+                            <span class="task-due-date">Due Dec 21</span>
+                        </span>
+                    
+                        <span class="right">
+                            <button
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span><lightning-icon class="slds-icon " icon-name="utility:delete" size="small" ></lightning-icon>
+                                </span>
+                            </button>
+                            <button 
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span><lightning-icon class="slds-icon " icon-name="utility:edit" size="small" ></lightning-icon>
+                                </span>
+                            </button> 
+                        </span>
+                    </div>
+                    <div class="task-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, hic.
+                    </div>
+                    <div class="task-info">
+                        Created on <span id="created-date"> Mon Dec 21</span> by
+                        <span id="created-by"> Mittie Walker</span>
+                    </div>
+                </div>
+                <!--Body task 2-->
+                <div class="error-state task">
+                    <hr />
+                    <div class="task-header">
+                        <span class="left">
+                            <span><lightning-radio-group name="radioGroup"
+                                options={options}
+                                value={value}
+                                type="radio"></lightning-radio-group>
+                            
+                            
+                                <input type="radio" name="fav_language" value="HTML"></span>
+                                <span class="fa fa-exclamation" style="font-size:24px; color:#F43708">
+                                    
+                                </span>
+                                <span class="task-title">Error State</span>
+                                <span class="task-separator" style="color:#F43708">&bull;</span>
+                                <span class="task-due-date" style="color:#F43708">Overdue</span>
+                            
+                        </span>
+                        <span class="right">
+                            <button
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span><lightning-icon class="slds-icon " icon-name="utility:delete" size="small" ></lightning-icon>
+                                </span>
+                            </button>
+                            <button 
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span><lightning-icon class="slds-icon " icon-name="utility:edit" size="small" ></lightning-icon>
+                                </span>
+                            </button> 
+                        </span>
+                    </div>
+                    <div class="task-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, hic.
+                    </div>
+                    <div class="task-info">
+                        Created on <span > Mon Dec 21</span> by
+                        <span ></span> Mittie Walker</span>
+                    </div>
+                </div>
+                <!--Body task 3-->
+                <div class="regular-state task">
+                    <hr />
+                    <div class="task-header">
+                        <span class="left">
+                            <span><lightning-radio-group name="radioGroup"
+                                options={options}
+                                value={value}
+                                type="radio"></lightning-radio-group>
+                            
+                                
+                                <input type="radio" name="fav_language" value="HTML"></span>
+                                <span class="task-title">Attachment State</span>
+                                <span class="task-separator">&bull;</span>
+                                <span class="task-due-date">Due Dec 21</span>
+                                
+                        </span>
+                        <span class="right">
+                            <button
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span><lightning-icon class="slds-icon " icon-name="utility:delete" size="small" ></lightning-icon>
+                                </span>
+                            </button>
+
+                            <button 
+                                style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                                <span><lightning-icon class="slds-icon " icon-name="utility:edit" size="small" ></lightning-icon>
+                                </span>
+                            </button> 
+                        </span>
+                    </div>
+        
+                    <div class="task-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, hic.
+                    </div>
+
+                    <div class="task-info">
+                        Created on <span > Mon Dec 21</span> by
+                        <span > Mittie Walker</span>
+                    </div>
+                    <div class="attachment">
+                        Created on <span > Mon Dec 21</span> by
+                        <span > Mittie Walker</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Button Sidebar-->
+        <div class="sidebar" >
+        
+            <div class="students_name" id="students_name">First Last</div><br>
+            <div class="hours" id="hours">6 Hours</div><br/><br/>
+            <!--hyperlinked sidebar-->
+            <a href="#"><span><lightning-icon class="slds-icon" icon-name="utility:clock"  size="small" ></lightning-icon>
+            </span><strong class="slds-m-left-small">Schedule</strong></a><br/><br/>
+
+
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:user" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">Student Information</strong></a><br/><br/>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:event" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">CSession</strong></a><br/><br/>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:call" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">Call Log</strong></a><br/><br/>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:page" size="small" ></lightning-icon>
+            </span><strong class="slds-m-left--small">Tasks</strong></a><br/><br/>
+            
+        </div>   
+    </div>
+    <!--Footer-->
+    <div class="slds-col-footer slds-size_12-of-12 slds-docked-form-footer">            
+            
+        <div class="reuler-footer" >
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:home" size="small" alternative-text="icon"></lightning-icon></span></span><span style="padding-right:200px;">Home</span></a>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:people" size="small" alternative-text="icon"></lightning-icon></span><span style="padding-right:200px;">Student</span></a>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:event" size="small" alternative-text="icon"></lightning-icon></span></span><span style="padding-right:200px;">Schedule</span></a>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:success" size="small" alternative-text="icon"></lightning-icon></span></span><span style="padding-right:200px;">Tasks</span></a>
+            <a href="#"><span><lightning-icon class="slds-icon " icon-name="utility:anywhere_chat" size="small" alternative-text="icon"></lightning-icon></span><span style="padding-right:200px;">Chat</span></a>
+            
+        </div> 
+    </div> 
+</template>

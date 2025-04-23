@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
+    <div class="ug-regular-header">
+        <span class="left">
+            <!-- Logo -->
+            <img id="header_logo" src="/images/header_logo.jpg" alt="header logo" />
+        </span>
+        <span class="right">
+            <!-- search box -->
+            <span>
+                <form action="/" method="GET" class="form">
+                    <input type="search" placeholder="Search name, school or subject" class="search-field" />
+                    <button type="submit" class="search-button" id="search-button">
+                        <span class="material-icons"
+                            style="color: #f9633d; width: 20px; height: 20px; object-fit: cover">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </span>
+
+            <!-- Notification button -->
+            <button id="notification-button" class="mdc-icon-button material-icons" style=" background-color: Transparent; background-repeat: no-repeat; border: none;">
+                <span class="material-icons" style="color: #ffffff;margin-left: 16px;margin-right: 16px;width: 16px;object-fit: cover;">
+                    notifications
+                </span>
+            </button>
+
+            <!-- Avatar -->
+            <button id="avatar-button" class="mdc-icon-button material-icons" style="background-color: Transparent;background-repeat: no-repeat;border: none;">
+                <span class="avatar">
+                    <span class="avatar_name">?</span>
+                </span>
+            </button>
+        </span>
+    </div>
+</aura:component>

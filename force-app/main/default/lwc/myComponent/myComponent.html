@@ -1,0 +1,28 @@
+<!-- myComponent.html -->
+<template>
+   
+        <!-- Display the data table -->
+
+        <!-- Add the search bar -->
+        <div class="search-bar">
+            <lightning-input type="search" label="Search" value={searchTerm} onchange={handleSearchTermChange}></lightning-input>
+            <lightning-button label="Search" variant="brand" onclick={handleSearch}></lightning-button>
+        </div>
+        
+
+        
+            <lightning-datatable
+                key-field="Id"
+                data={contacts}
+                columns={columns}
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        
+        <!-- Display the data table -->
+
+        <!-- Add button to open the contact creation modal -->
+        <lightning-button label="Create Contact" variant="brand" onclick={openModal}></lightning-button>
+
+        <!-- Use the contact modal component -->
+        <c-datatable-For-Contact is-modal-open={isModalOpen} onclose={closeModal}></c-datatable-For-Contact>
+</template>

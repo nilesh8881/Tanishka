@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label">Address Autocomplete</label>
+        <div class="slds-form-element__control">
+            <input type="text" 
+                   placeholder="Enter Address" 
+                   value={inputValue} 
+                   oninput={handleInputChange} 
+                   onblur={handleInputBlur} />
+            <ul class="suggestions" if:true={showSuggestions}>
+                <template for:each={suggestions} for:item="suggestion">
+                    <li key={suggestion.place_id} 
+                        onclick={handleSuggestionClick}>{suggestion.display_name}</li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

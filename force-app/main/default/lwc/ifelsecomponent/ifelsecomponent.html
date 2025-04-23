@@ -1,0 +1,24 @@
+<template>
+    <!--<template if:true={abra}>
+        Abra!
+    </template>
+    <template if:false={abra}>
+        <template if:true={kadabra}>
+            Kadabra!
+        </template>
+        <template if:false={kadabra}>
+            Alakazam!
+        </template>
+    </template>-->
+    
+        <template lwc:if={abra}>
+            Abra!
+        </template>
+        <template lwc:elseif={kadabra}>
+            Kadabra!
+        </template>
+        <template lwc:else>
+            Alakazam!
+        </template>
+    
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-var-m-around_medium">
+        <template if:true={showbtn}>
+            
+            <lightning-button 
+                variant="brand" 
+                label={label.Status_InActive}
+                title="In Active" 
+                onclick={handleClick}>
+            </lightning-button>
+        </template>
+        <template if:false={showbtn}>
+            <lightning-button 
+                variant="brand" 
+                label={label.Status_Active}
+                title="Active" 
+                onclick={handleClick}>
+            </lightning-button>
+        </template>
+    </div>
+</template>

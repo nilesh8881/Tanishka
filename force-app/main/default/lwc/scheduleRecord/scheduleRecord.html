@@ -1,0 +1,93 @@
+<template> 
+    <!-- Table -->
+    <lightning-card title="Create Schedule Record">
+    
+        <div class="slds-grid slds-wrap" style="margin:1%">
+        
+            <div class="slds-col slds-size_1-of-2"> 
+                <!-- Displaying fields to get information. -->
+                <lightning-combobox style="margin:1%" label="Status" 
+                    name="Status__c" 
+                    onchange={statusChangedHandler} 
+                    options={statusValues} 
+                    placeholder="--None--" 
+                    value={selectedStatus}>
+                </lightning-combobox>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-combobox style="margin:1%" label="Subject" 
+                    name="Subject__c" 
+                    onchange={subjectChangedHandler} 
+                    options={SubjectValues} 
+                    placeholder="--None--" 
+                    value={selectedSubject}>
+                </lightning-combobox>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-combobox style="margin:1%" label="Repeat" 
+                    name="Repeat__c" 
+                    onchange={repeatChangedHandler} 
+                    options={RepeatValues} 
+                    placeholder="--None--" 
+                    value={selectedRepeat}>
+                </lightning-combobox>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-combobox style="margin:1%" label="Day" 
+                    name="Day__c" 
+                    onchange={dayChangedHandler} 
+                    options={DayValues} 
+                    placeholder="--None--" 
+                    value={selectedDay}>
+                </lightning-combobox>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">    
+                
+                <lightning-input type="Time" 
+                                    name="CustomObjectName" 
+                                    label="Start Time"
+                                    value={custObjRecord.Start_Time__c} 
+                                    onchange={startTimeChangedHandler} 
+                                    class="slds-m-right_small"
+                                    style="margin:1%">
+
+                </lightning-input>
+                        
+            </div>   
+
+            <div class="slds-col slds-size_1-of-2">    
+                
+                <lightning-input type="Number" 
+                                    name="Duration__c" 
+                                    label="Duration"
+                                    value={custObjRecord.Duration__c} 
+                                    onchange={numberChangedHandler} 
+                                    class="slds-m-right_small"
+                                    style="margin:1%">
+
+                </lightning-input>
+                        
+            </div>  
+
+            <!--Button to create record-->
+            <div class="modal-footer slds-modal__footer">
+                <div class="forceChangeRecordTypeFooter">
+                    <lightning-button variant="brand" label="Create Schedule" onclick={createSchedule}></lightning-button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+    
+    <div class="slds-m-top_small slds-m-bottom_medium  slds-float_right">
+        <lightning-button label="Cancel" title="Non-primary action" onclick={handleClick} class="slds-m-left_small">
+        </lightning-button>
+            
+        <lightning-button variant="brand" label="Save" title="Primary action" onclick={handleClick} class="slds-m-left_small">
+        </lightning-button>
+    </div>
+        
+</template>
